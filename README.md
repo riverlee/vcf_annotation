@@ -64,7 +64,7 @@ Note: **For variants in the VCF which are multiallelic, we will break them down 
   3. Number of reads supporting the variant is implemented by taking from the **AO in the INFO column**.
   4. Percentage of reads supporting the variant versus those supporting reference reads is implemented as **ALT_DEPTH/REF_DEPTH**.
   5. Allele frequency of variant from ExAC API - **Use bulk query http://exac.hms.harvard.edu//rest/bulk/variant/variant**.
-  6. Any additional annotations that you feel might be relevant - **In the output file, last column is effect;gene;acid_change;protein_change;SIFT;PolyPhen;BIOTYPE**.G
+  6. Any additional annotations that you feel might be relevant - **In the output file, last column is effect;gene;acid_change;protein_change;SIFT;PolyPhen;BIOTYPE**.
   
 ## Things that can be improved
 
