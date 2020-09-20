@@ -1,0 +1,27 @@
+INFO  @ Sat, 19 Sep 2020 20:38:28: Loading 7569 variants 
+INFO  @ Sat, 19 Sep 2020 20:38:28: ExAC annotates 1/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:38:34: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:38:35: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 482235 
+INFO  @ Sat, 19 Sep 2020 20:38:36: ExAC annotates 2/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:38:41: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:38:42: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 421689 
+INFO  @ Sat, 19 Sep 2020 20:38:44: ExAC annotates 3/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:38:49: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:38:50: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 521307 
+INFO  @ Sat, 19 Sep 2020 20:38:52: ExAC annotates 4/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:38:57: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:38:58: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 432555 
+INFO  @ Sat, 19 Sep 2020 20:38:59: ExAC annotates 5/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:39:04: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:39:05: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 431478 
+INFO  @ Sat, 19 Sep 2020 20:39:06: ExAC annotates 6/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:39:11: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:39:12: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 426107 
+INFO  @ Sat, 19 Sep 2020 20:39:14: ExAC annotates 7/8 chunks with 1000 variants 
+DEBUG @ Sat, 19 Sep 2020 20:39:19: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:39:20: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 481953 
+INFO  @ Sat, 19 Sep 2020 20:39:21: ExAC annotates 8/8 chunks with 569 variants 
+DEBUG @ Sat, 19 Sep 2020 20:39:26: Starting new HTTP connection (1): exac.hms.harvard.edu:80 
+DEBUG @ Sat, 19 Sep 2020 20:39:27: http://exac.hms.harvard.edu:80 "POST //rest/bulk/variant/variant HTTP/1.1" 200 228716 
+INFO  @ Sat, 19 Sep 2020 20:39:28: Write out to 'result.tsv' 
+INFO  @ Sat, 19 Sep 2020 20:39:28: Finished 
