@@ -1,11 +1,6 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# A simple tools to annotate VCF files
+# A simple tool to annotate VCF files
 
-## Requirement and implementation to each points
+## Requirement 
 
 For this challenge, you are asked to prototype a variant annotation tool. We will provide you with
 a VCF file, and you will create a small software program to annotate each variant in the file.
@@ -54,10 +49,14 @@ cd test
 python ../vcf_annotation.py --infile ../Challenge_data_\(1\).vcf --outfile result.tsv 2>&1|tee run.log
 ```
 
+## Result format
 
-## Details to each requirment
+![result](result.png)
 
-Note: **For variants in the VCF which are multiallelic, we will break it down into multiple variant records. For those variant records, the ALT_DEPTH+REF_DEPTH is not equal to DEPTH in the output file**
+
+## Details to each requirement
+
+Note: **For variants in the VCF which are multiallelic, we will break them down into multiple variant records. For those variant records, the ALT_DEPTH+REF_DEPTH is not equal to DEPTH in the output file**
 
 
   1. Type of variation is implemented by taking from the **TYPE in the INFO column**. Their effect is implemented by taking from the **ExAC annotation (vep_annotations->Consequence)**. 
@@ -65,13 +64,12 @@ Note: **For variants in the VCF which are multiallelic, we will break it down in
   3. Number of reads supporting the variant is implemented by taking from the **AO in the INFO column**.
   4. Percentage of reads supporting the variant versus those supporting reference reads is implemented as **ALT_DEPTH/REF_DEPTH**.
   5. Allele frequency of variant from ExAC API - **Use bulk query http://exac.hms.harvard.edu//rest/bulk/variant/variant**.
-  6. Any additional annotations that you feel might be relevant - **In the output file, last column is effect;gene;acid_change;protein_change;SIFT;PolyPhen;BIOTYPE**.
+  6. Any additional annotations that you feel might be relevant - **In the output file, last column is effect;gene;acid_change;protein_change;SIFT;PolyPhen;BIOTYPE**.G
   
-## Things can be improved
+## Things that can be improved
 
-- Use try/exception on the depth(DP) and alt depth (AO) when converting them into integer(int)
-- Current load all the vcf records into a list. When vcf is large(millions records), we can implemete it in a way that read a certain number of variants and  process them, then read the next certaion number of variants,process them until read all variants.
+- Use try/except on the depth(DP) and alt depth (AO) when converting them into integer(int)
+- Currently it loads all the vcf records into a list. When vcf is large(millions records), we can implemete it in a way that read a certain number of variants and  process them, then read the next certaion number of variants,process them until read all variants.
 - Type of variation could be implemeetd as a function instead of reading it from INFO
 - Variants effection could be implemeted local as a function by taking an gene annotation file. (E.g, GTF format)
-- Nice to add testing code, either unittest or pytest
-- 
+- Nice to have some testing codes, either unittest or pytest
